@@ -14,13 +14,13 @@ function setup() {
    frameRate(20);
 
 
-  bg=loadImage("gaming.png");
+  bg=loadImage("background.png");
   sprite=loadImage("mazeroll1.png");
   //sprite1=loadImage("bar.png");
 }
 
 function draw (){
-  background(0);
+  background(bg);
   image(sprite,spriteXpos,spriteYpos,60,60);
   //image(sprite1,sprite1Xpos,sprite1Ypos,100,100);
 
