@@ -21,7 +21,7 @@ function setup() {
 
 function draw (){
   background(bg);
-  image(sprite,spriteXpos,spriteYpos,60,60);
+  image(sprite,spriteXpos,spriteYpos,30,30);
   //image(sprite1,sprite1Xpos,sprite1Ypos,100,100);
 
   y=y-1;
@@ -111,27 +111,27 @@ if (line <= 0){
 
 
 if (keyIsDown(UP_ARROW)){
-  spriteYpos-=10;
+  spriteYpos-=20;
 }
   if (keyIsDown(DOWN_ARROW)){
-    spriteYpos+=10;
+    spriteYpos+=20;
   }
 
     if (keyIsDown(LEFT_ARROW)){
-      spriteXpos-=10;
+      spriteXpos-=20;
     }
     if (keyIsDown(RIGHT_ARROW)){
-      spriteXpos+=10;
+      spriteXpos+=20;
 }
 
 if (sprite){
 
 }
 
-for(var i=10; i < 20; i+=10){
-  // var lineYpos = random(40);
-  // line(i,lineYpos, 50,50);
-}
+// for(var i=10; i < 20; i+=10){
+//   var lineYpos = random(40);
+//   line(i,lineYpos, 50,50);
+// }
 y=y-1;
 if(y<0){
   y=height;
